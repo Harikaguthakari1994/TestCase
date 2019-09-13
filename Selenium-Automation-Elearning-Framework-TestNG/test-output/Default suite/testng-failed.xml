@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.TC04">
+      <class name="com.training.sanity.tests.TC06">
         <methods>
           <include name="setUp"/>
           <include name="setUpBeforeClass"/>
           <include name="AddPropertyTest"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.TC04 -->
+      </class> <!-- com.training.sanity.tests.TC06 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
