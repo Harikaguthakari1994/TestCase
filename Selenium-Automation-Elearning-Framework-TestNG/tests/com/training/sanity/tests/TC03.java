@@ -22,7 +22,7 @@ import com.training.utility.DriverNames;
 public class TC03 {
 	private WebDriver driver;
 	private String baseUrl;
-	private com.training.pom.Assignment2POM Assignment2POM;
+	private com.training.pom.TC01POM TC01POM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 	
@@ -37,7 +37,7 @@ public class TC03 {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		Assignment2POM = new com.training.pom.Assignment2POM(driver); 
+		TC01POM = new com.training.pom.TC01POM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -51,10 +51,10 @@ public class TC03 {
 				//}
 				@Test
 				public void validLoginTest() {
-					Assignment2POM.CLickLoginLink();
-					Assignment2POM.EnterUsername("admin");
-					Assignment2POM.EnterPassword("adminuser@123");
-					Assignment2POM.submitloginbtn();
+					TC01POM.CLickLoginLink();
+					TC01POM.EnterUsername("admin");
+					TC01POM.EnterPassword("adminuser@123");
+					TC01POM.submitloginbtn();
 					WebElement Post = driver.findElement(By.xpath("//div[@class='wp-menu-image dashicons-before dashicons-admin-post']"));
 					 Actions act = new Actions(driver);
 					   Action mouseover = act.moveToElement(Post).build();
@@ -73,6 +73,8 @@ public class TC03 {
 					   String ExpectedText = "1 item";
 					   Assert.assertEquals(ActualText,ExpectedText);
 					   System.out.println("Test Case Passed3");
+					   
+					   
 					   
 					   
 }

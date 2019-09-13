@@ -60,6 +60,8 @@ public class TC04 {
 					Assignment2POM.AddnewPropertyClick();
 					Assignment2POM.EnterTitlevalue("IBM Testing1211");
 					Assignment2POM.EnterbodyValue1("IBM Testing1211");
+	
+					
 					
 				
 					Assignment2POM.featuredcheckboxclick();
